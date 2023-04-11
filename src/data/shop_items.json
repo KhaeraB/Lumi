@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Earring Cherry",
+      "price": 19.99,
+      "imgUrl": "/images/bijou-b1.png"
+    },
+    {
+      "id": 2,
+      "name": "Earring India",
+      "price": 29.99,
+      "imgUrl": "/images/bijou-b2.png"
+    },
+    {
+      "id": 3,
+      "name": "Earring Skull",
+      "price": 19.99,
+      "imgUrl": "/images/bijou-b3.png"
+    },
+    {
+      "id": 4,
+      "name": "Earring RedWings",
+      "price": 24.99,
+      "imgUrl": "/images/bijou-b4.png"
+    }
+  ]
