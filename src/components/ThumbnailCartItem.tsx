@@ -1,6 +1,7 @@
 import { useAddCart } from "../context/AddCartContext";
 import storeItems from "../data/shop_items.json";
-import { Stack } from "react-bootstrap";
+import { Button, Stack } from "react-bootstrap";
+import { formatCurrency } from "../utilities/formatCurrency";
 
 type ThumbnailCartProps = {
   id: number;
@@ -25,7 +26,10 @@ export function ThumbnailCartItem({ id, quantity }: ThumbnailCartProps) {
         {quantity > 1 && (
           <span className="text-muted" style={{ fontSize: ".65rem" }}> x {quantity} </span>
         )}
+         <div className="text-muted" style={{fontSize:".75rem"}}>{formatCurrency(item.price)}</div>
       </div>
+      <div>{formatCurrency(item.price * quantity)}</div>
+      <Button variant="outline-warning" size="sm" onClick={()=> removeFromCart(item.id)}>&times;</Button>
     </Stack>
   );
 }

@@ -1,7 +1,7 @@
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
 import { useAddCart } from "../context/AddCartContext";
 
-export function NavBar() {
+const NavBar= () => {
   const { openCart, cartQuantity } = useAddCart();
 
   return (
@@ -58,3 +58,4 @@ export function NavBar() {
     </Navbar>
   );
 }
+export default NavBar; 
